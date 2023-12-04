@@ -26,8 +26,11 @@ public class EmailSearch {
                 found = true;
                 break;
             }
-        }
+        }else{
+            notfound = false;
+            break;
 
+        }
         // Display the result of the search
         if (found) {
             System.out.println("Email ID found in the array.");
