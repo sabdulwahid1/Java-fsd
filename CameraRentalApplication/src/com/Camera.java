@@ -56,6 +56,7 @@ class User {
    private Wallet wallet;
    private List<Camera> rentedCameras;
 
+   
    public User(String username, String password, double initialBalance) {
       this.username = username;
       this.password = password;
