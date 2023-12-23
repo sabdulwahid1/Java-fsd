@@ -1,0 +1,5 @@
+package com.pd.entity;
+
+public class Product {
+
+}

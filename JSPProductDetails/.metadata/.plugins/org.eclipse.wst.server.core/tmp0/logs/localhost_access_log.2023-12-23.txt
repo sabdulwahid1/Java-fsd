@@ -1,0 +1,6 @@
+127.0.0.1 - - [23/Dec/2023:10:09:27 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [23/Dec/2023:10:09:28 +0530] "GET /JSP_Product_Details/ HTTP/1.1" 200 270
+127.0.0.1 - - [23/Dec/2023:10:09:32 +0530] "GET /JSP_Product_Details/addProduct.jsp HTTP/1.1" 200 509
+127.0.0.1 - - [23/Dec/2023:10:09:49 +0530] "GET /JSP_Product_Details/index.jsp HTTP/1.1" 200 270
+127.0.0.1 - - [23/Dec/2023:10:09:58 +0530] "GET /JSP_Product_Details/ProductController HTTP/1.1" 302 -
+127.0.0.1 - - [23/Dec/2023:10:09:58 +0530] "GET /JSP_Product_Details/displayProduct.jsp HTTP/1.1" 200 628

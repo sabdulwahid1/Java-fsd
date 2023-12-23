@@ -1,0 +1,5 @@
+package com.pd.dao;
+
+public class ProductDAO {
+
+}
