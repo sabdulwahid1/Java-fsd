@@ -1,0 +1,85 @@
+package com.example.controller;
+
+import java.util.List;
+import java.util.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import com.example.entity.User;
+import com.example.repository.UserRepository;
+@Controller
+@RequestMapping("/api/user")
+public class UserController {
+@Autowired
+private UserRepository userRepository;
+@GetMapping("/register")
+public String showRegistrationForm(Model model) {
+model.addAttribute("user", new User());
+return "register";
+}
+@GetMapping("/home")
+public String goHome(Model model) {
+model.addAttribute("user", new User());
+return "redirect:/home.html";
+}
+@PostMapping("/login")
+public String processLogin(@RequestParam("username") String
+username, @RequestParam("password") String password) {
+// Handle user login logic here
+// You can add authentication and authorization checks
+// Retrieve the user from the database based on the provided username
+User user = userRepository.findByUsername(username);
+// Check if the user exists and the password matches
+if (user != null && user.getPassword().equals(password)) {
+// Redirect to the user dashboard or any other desired page
+return "redirect:/home.html";
+} else {
+// If login fails, you can return an error message or redirect to the
+login page
+// with an error flag
+return "redirect:/errorpage.html";
+}
+}
+@PostMapping("/register")
+public String processRegistration(@RequestParam("username") String
+username,
+@RequestParam("password") String password,
+@RequestParam("email") String email) {
+User user = new User(username, password, email);
+// Handle user registration logic here
+// You can add validation checks, password hashing, etc.
+// Save the user to the database
+userRepository.save(user);
+// Redirect to the login page or any other desired page
+return "redirect:/register-success.html";
+}
+@GetMapping("/details")
+public String showUserDetails(@RequestParam("user-id") Long userId,
+Model model) {
+// Retrieve the user from the database based on the provided user ID
+Optional<User> userOptional = userRepository.findById(userId);
+// Check if the user exists
+if (userOptional.isPresent()) {
+// Pass the user object to the view
+model.addAttribute("user", userOptional.get());
+// Return the user details view
+return "user-details";
+} else {
+// If the user does not exist, handle the appropriate error or redirect
+return "redirect:/error-page.html";
+}
+}
+@GetMapping("/all")
+public String showAllUserDetails(Model model) {
+// Retrieve all users from the database
+List<User> users = userRepository.findAll();
+// Pass the list of users to the model
+model.addAttribute("users", users);
+// Return the user details view
+return "all-user-details";
+}
+}

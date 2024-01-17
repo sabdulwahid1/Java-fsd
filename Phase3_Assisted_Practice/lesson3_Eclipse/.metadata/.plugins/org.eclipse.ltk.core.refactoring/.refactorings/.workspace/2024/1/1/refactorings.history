@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;UsingJUint&apos; to &apos;UsingJUnit&apos;&#x0D;&#x0A;- Original element: &apos;UsingJUint&apos;&#x0D;&#x0A;- Renamed element: &apos;UsingJUint&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;UsingJUint&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=UsingJUint" name="UsingJUnit" references="true" stamp="1704287600924" version="1.0"/>
+</session>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Successful</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+padding: 20px;
+}
+.container {
+max-width: 400px;
+margin: 0 auto;
+text-align: center;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1 {
+}
+p {
+}
+margin-top: 0;
+color: #333;
+margin-bottom: 20px;
+.btn {
+display: inline-block;
+padding: 10px 20px;
+margin-right: 10px;
+font-size: 16px;
+text-align: center;
+text-decoration: none;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="mt-4">Registration Successful</h1>
+<p>Your registration was successful.</p>
+<p>
+Proceed to <a href="user-login.html">Login</a>
+</p>
+</div>
+</body>
+</html>

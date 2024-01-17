@@ -1,0 +1,5 @@
+package com.UserFeedback.repositories;
+
+public class FeedbackRepository {
+
+}

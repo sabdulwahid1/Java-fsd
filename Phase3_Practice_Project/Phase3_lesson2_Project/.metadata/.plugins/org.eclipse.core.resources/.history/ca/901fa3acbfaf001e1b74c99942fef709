@@ -1,0 +1,5 @@
+package com.UserFeedback.entities;
+
+public class Feedback {
+
+}

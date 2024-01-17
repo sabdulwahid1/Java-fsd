@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>All User Details</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+padding: 20px;
+}
+h1 {
+}
+color: #333;
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+th {
+}
+background-color: #007bff;
+color: #fff;
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+<h1>All User Details</h1>
+<table>
+<tr>
+<th>User ID</th>
+<th>Name</th>
+<th>Email</th>
+</tr>
+<!-- Iterate over the list of users -->
+<tr th:each="user : ${users}">
+<td th:text="${user.id}"></td>
+<td th:text="${user.username}"></td>
+<td th:text="${user.email}"></td>
+</tr>
+</table>
+<a href="home">Go to home page</a>
+</body>
+</html>
