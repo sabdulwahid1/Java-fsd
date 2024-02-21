@@ -1,0 +1,16 @@
+.image{
+     background-size:cover; width:auto;
+    background-image:url('https://thumbs.dreamstime.com/b/colorful-bead-black-letter-word-admin-abbreviation-administration-wood-background-187718269.jpg');
+    height: 800px;
+    background-position:89% 30%;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-color:antiquewhite;
+  }
+
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+
+

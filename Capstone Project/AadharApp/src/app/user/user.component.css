@@ -1,0 +1,9 @@
+.image{
+    height:39em; background-size:cover; width:auto;
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoe56UV1WpPue4uvKNEGweCaLMfIppfpiYPA&usqp=CAU');
+    
+    background-position:89% 30%;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-color:antiquewhite;
+  }
